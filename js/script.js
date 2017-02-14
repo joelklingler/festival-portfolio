@@ -1,6 +1,9 @@
 $( document ).ready(function() {
 
+    var nav = $('nav');
+
     initMap();
+    nav.sticky( {topSpacing:0} );
 
     $(window).scroll(function(){
         var windscroll = $(window).scrollTop();

@@ -40,51 +40,44 @@ hr {
 
 
 
-
-div.nav-container {
+nav {
     position: relative;
-    height: 80px;
-    background: gray;
-}
-
-div.nav-container nav {
     display: flex;
     align-items: center;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    z-index: 999;
     background: white;
     box-shadow: 0 4px 8px -6px rgba(0, 0, 0, .3);
+    z-index: 999 !important;
 }
 
-div.nav-container nav .centered {
+nav .centered {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-div.nav-container nav .centered img {
+nav .centered img {
     height: 60px; /* TODO: Size relative to parent */
 }
 
-div.nav-container nav .centered ul {
+nav .centered ul {
     list-style-type: none;
     display: flex;
     align-items: center;
 }
 
-div.nav-container nav .centered ul li {
+nav .centered ul li {
     padding: 5px;
 }
 
-div.nav-container nav .centered ul li.active {
+nav .centered ul li.active {
     border-bottom: 1px solid #777;
 }
 
-div.nav-container nav .centered ul li a {
+nav .centered ul li a {
     text-decoration: none;
     color: #777;
     text-transform: uppercase;
@@ -98,7 +91,7 @@ div.nav-container nav .centered ul li a {
 
 section.landing-page {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
     background: lightgrey;
 }
 
