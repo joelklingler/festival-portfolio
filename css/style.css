@@ -99,7 +99,7 @@ section.landing-page {
     height: 100vh;
     background-size: cover;
     background-image: url("http://edmsauce.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/1366.jpg");
-    filter:opacity(30%) grayscale(100%);
+    filter: sepia();
 }
 
 section.landing-page .scroll-info {
