@@ -89,7 +89,10 @@ nav .centered ul li a {
     font-weight: bold;
 }
 
-
+.scroll-info a {
+    text-decoration: none;
+    color: white;
+}
 
 
 
