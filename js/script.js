@@ -16,7 +16,7 @@ $( document ).ready(function() {
         });
     });
 
-    $(document).on('click', 'a', function(event) {
+    $(document).on('click', 'a.scroll', function(event) {
         event.preventDefault();
 
         $('html,body').animate({
