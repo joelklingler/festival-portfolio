@@ -64,7 +64,8 @@ function initMap() {
         ['Tomorrowland @ Belgium', 51.091421, 4.385463, 1],
         ['Electric Love @ Austria', 47.823452, 13.175016, 2],
         ['Openair @ St. Gallen', 47.424482, 9.376717, 3],
-        ['Sonic @ Wolfwil', 47.269424, 7.823795]
+        ['Sonic @ Wolfwil', 47.269424, 7.823795],
+        ['Summerdays @ Arbon', 47.519659, 9.434226]
     ];
 
     var infowindow = new google.maps.InfoWindow();
