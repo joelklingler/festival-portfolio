@@ -77,11 +77,11 @@ div.nav-container nav .centered ul {
 }
 
 div.nav-container nav .centered ul li {
-    margin: 0 5px;
+    padding: 5px;
 }
 
 div.nav-container nav .centered ul li.active {
-    border-bottom: 2px solid #777;
+    border-bottom: 1px solid #777;
 }
 
 div.nav-container nav .centered ul li a {
