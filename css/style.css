@@ -111,10 +111,6 @@ section.landing-page .scroll-info {
     color: #fff;
 }
 
-section.landing-page .scroll-info p {
-    font-weight: bold;
-}
-
 section.landing-page .scroll-info .arrow-down {
     position: absolute;
     bottom: 5px;
