@@ -202,6 +202,10 @@ footer .centered .social span:hover {
     opacity: 1;
 }
 
+footer .centered .social a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
