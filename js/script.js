@@ -34,6 +34,20 @@ function initMap() {
             ]
         },
         {
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [
+                { visibility: "off" }
+            ]
+        },
+        {
+            featureType: "poi",
+            elementType: "geometry",
+            stylers: [
+                { visibility: "off" }
+            ]
+        },
+        {
             featureType: "water",
             elementType: "labels",
             stylers: [
@@ -58,7 +72,8 @@ function initMap() {
 
     var locations = [
         ['Tomorrowland @ Belgium', 51.091421, 4.385463, 1],
-        ['Electric Love @ Austria', 47.823452, 13.175016, 2]
+        ['Electric Love @ Austria', 47.823452, 13.175016, 2],
+        ['Openair @ St. Gallen', 47.424482, 9.376717, 3]
     ];
 
     var infowindow = new google.maps.InfoWindow();
