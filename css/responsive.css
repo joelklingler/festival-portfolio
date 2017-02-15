@@ -4,8 +4,9 @@
     {
         display: none;
     }
-    nav .centered ul li a.toggle-nav {
+    nav .centered ul li a.nav-toggle {
         display: inline;
+        font-size: 36px;
     }
 }
 
