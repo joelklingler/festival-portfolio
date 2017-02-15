@@ -47,15 +47,6 @@ hr {
     margin: 0 auto;
 }
 
-.icon-heart:before {
-    content: "\e9da";
-    color: #e74c3c;
-}
-
-.icon-github:before {
-    content: "\eab0";
-}
-
 .icon-keyboard_arrow_down:before {
     content: "\e900";
     font-size: 50px;
@@ -509,6 +500,14 @@ footer .centered .social span {
 footer .centered .social span:hover {
     font-size: 22px;
     opacity: 1;
+}
+
+.social a i {
+    color: #424242;
+}
+
+.social a i:hover {
+    color: black;
 }
 
 .social a {
