@@ -487,6 +487,10 @@ footer .centered p.credits {
     color: #424242;
 }
 
+footer .centered p i.fa-heart {
+    color: red;
+}
+
 footer .centered {
     display: flex;
     flex-direction: row;
