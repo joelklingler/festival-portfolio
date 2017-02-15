@@ -173,6 +173,7 @@ nav .overlay a.nav-close {
 
 .layer.logo-layer {
     top: 50% !important;
+    margin-top: -60px;
 }
 
 .layer.scroll-layer {
