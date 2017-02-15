@@ -471,6 +471,13 @@ footer {
 
 }
 
+footer .centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 footer .centered p.credits {
     font-weight: bold;
     color: #424242;
@@ -478,12 +485,6 @@ footer .centered p.credits {
 
 footer .centered p i.fa-heart {
     color: red;
-}
-
-footer .centered {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 footer .centered .social span {
