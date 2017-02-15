@@ -13,6 +13,7 @@ $( document ).ready(function() {
     });
 
     function toggleLogoAnimation() {
+        toggleVideoFilter();
         if(barsAnimationStopped) {
             barsAnimationStopped = false;
             bars.css("-webkit-animation-play-state", "running");
@@ -20,5 +21,9 @@ $( document ).ready(function() {
             barsAnimationStopped = true;
             bars.css("-webkit-animation-play-state", "paused");
         }
+    };
+
+    function toggleVideoFilter() {
+        $("section.landing-page .bg-media iframe").toggleClass("gray-scale-filter", 3000);
     };
 });

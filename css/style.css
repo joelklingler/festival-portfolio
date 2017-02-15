@@ -203,8 +203,11 @@ section.landing-page .bg-media iframe {
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
     filter: blur(10px);*/
-    filter: grayscale();
     transform: scale(1.0);
+}
+
+.gray-scale-filter {
+    filter: grayscale();
 }
 
 section.landing-page .animated-logo {
