@@ -211,6 +211,8 @@ section.landing-page div.bg-image {
 
 section.landing-page .animated-logo {
     position: relative;
+    margin: 0 auto;
+    top: 45%;
     width: 200px;
     height: 200px;
     display: flex;
