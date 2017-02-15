@@ -341,13 +341,14 @@ section.landing-page .scroll-info {
     left: 0;
     width: 100%;
     color: #fff;
+    text-align: center;
 }
 
 section.landing-page .scroll-info .arrow-down {
     position: absolute;
     bottom: 5px;
     left:50%;
-    margin-left: -16px;
+    margin-left: -25px;
     width: 50px;
     height: 50px;
     -moz-animation: bounce 2s infinite;
