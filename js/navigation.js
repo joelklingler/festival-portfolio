@@ -17,4 +17,20 @@ $(document).ready(function() {
             scrollTop: $( $.attr(this, 'href') ).offset().top - 100
         }, 500);
     });
+
+    $(".nav-toggle").click(function() {
+        $("nav .overlay")[0].style.width = "100%";
+    });
+
+    $(".nav-close").click(function() {
+        closeNavigationOverlay();
+    });
+
+    $("nav .overlay .overlay-content li a").click(function() {
+        closeNavigationOverlay();
+    })
+
+    function closeNavigationOverlay() {
+        $("nav .overlay")[0].style.width = "0";
+    }
 });

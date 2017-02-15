@@ -93,6 +93,48 @@ nav .centered ul li:last-child {
     display: none;
 }
 
+nav .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color:black;
+    opacity: 0.7;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+nav .overlay ul.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+nav .overlay ul.overlay-content li a, nav .overlay a.nav-close {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+nav .overlay ul.overlay-content li a:hover, nav .overlay ul.overlay-content li a:focus {
+    color: #f1f1f1;
+}
+
+nav .overlay a.nav-close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
 .scroll-info a.scroll {
     text-decoration: none;
     color: white;

@@ -28,13 +28,21 @@
 <nav>
     <div class="centered">
         <a href="#home" class="scroll"><img src="assets/images/logo.svg" alt=""/></a>
-
         <ul>
             <li class="active"><a class="scroll" href="#home">Start</a></li>
             <li><a class="scroll" href="#pictures">Bilder</a></li>
             <li><a class="scroll" href="#places" data-scroll="places">Places</a></li>
             <li><a class="scroll" href="#">Impressum</a></li>
-            <li><a href="#" class="toggle-nav">&#9776;</a></li>
+            <li><a href="javascript:void(0)" class="nav-toggle">&#9776;</a></li>
+        </ul>
+    </div>
+    <div class="overlay">
+        <a href="javascript:void(0)" class="nav-close">&times;</a>
+        <ul class="overlay-content">
+            <li class="active"><a class="scroll" href="#home">Start</a></li>
+            <li><a class="scroll" href="#pictures">Bilder</a></li>
+            <li><a class="scroll" href="#places" data-scroll="places">Places</a></li>
+            <li><a class="scroll" href="#">Impressum</a></li>
         </ul>
     </div>
 </nav>
