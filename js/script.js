@@ -3,7 +3,9 @@ $( document ).ready(function() {
     var animatedLogo = $('.animated-logo');
     var bars = $('.pseudo-bars .bar');
     var barsAnimationStopped = false;
+    var scene = $("#scene");
 
+    scene.parallax();
     animatedLogo.on('click', function() {
         if(barsAnimationStopped) {
             barsAnimationStopped = false;

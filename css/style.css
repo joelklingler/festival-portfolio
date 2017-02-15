@@ -20,6 +20,13 @@
     background: rgba(0,0,0,0.61); /* Some darker color when you click it */
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -157,28 +164,35 @@ nav .overlay a.nav-close {
     color: white;
 }
 
+.scene {
+    width: 100%;
+    height: 100%;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+}
+
 section.landing-page {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-}
-
-section.landing-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
 }
 
 section.landing-page .bg-container {
-    position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    height: 120%;
+    width: 120%;
     overflow: hidden;
+    margin-left: -10%;
+    margin-right: -10%;
+    margin-top: -10%;
+    margin-bottom: -10%;
     z-index: -1;
 }
 
@@ -188,13 +202,11 @@ section.landing-page div.bg-image {
     background-image: url("https://2sczrg31729t1djmg132q5a7-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/edc-1600x900.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
     filter: blur(10px);
-    transform: scale(1.3);
 }
 
 section.landing-page .animated-logo {
