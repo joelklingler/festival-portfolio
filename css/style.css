@@ -93,7 +93,7 @@ nav .centered ul li a.toggle-nav {
     display: none;
 }
 
-.scroll-info a {
+.scroll-info a.scroll {
     text-decoration: none;
     color: white;
 }
@@ -101,23 +101,48 @@ nav .centered ul li a.toggle-nav {
 section.landing-page {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+}
+
+section.landing-page .bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.bg-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://2sczrg31729t1djmg132q5a7-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/edc-1600x900.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("http://edmsauce.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/1366.jpg");
-    filter: sepia();
+    background-position: 50% 50%;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    transform: scale(1.3);
 }
 
 section.landing-page .scroll-info {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    text-align: center;
     color: #fff;
 }
 
 section.landing-page .scroll-info .arrow-down {
     position: absolute;
     bottom: 5px;
+    left:50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
