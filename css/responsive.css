@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:680px) {
     nav .centered ul li:not(:first-child)
@@ -25,4 +26,19 @@
     display: block;
     text-align: left;
   }
+=======
+@media screen and (max-width:680px) {
+    /* If screen smaller than 680 px hide all nav items except the
+    active one and the toggle-nav button */
+    nav .centered ul li:not(.active)
+    {
+        display: none;
+    }
+    nav .centered ul li:last-child {
+      display: inline-block;
+    }
+    nav .centered ul li.active {
+      border: none;
+    }
+>>>>>>> 91b517eae82f51f3845cd4257d7df6b048d996ab
 }
