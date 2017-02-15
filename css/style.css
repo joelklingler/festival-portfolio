@@ -89,7 +89,7 @@ nav .centered ul li a {
     font-weight: bold;
 }
 
-nav .centered ul li a.toggle-nav {
+nav .centered ul li:last-child {
     display: none;
 }
 
