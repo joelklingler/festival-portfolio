@@ -202,6 +202,7 @@ section.landing-page div.bg-image {
     background-image: url("https://2sczrg31729t1djmg132q5a7-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/edc-1600x900.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     -webkit-filter: blur(10px);
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
