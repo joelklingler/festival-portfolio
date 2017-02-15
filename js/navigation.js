@@ -22,7 +22,7 @@ $(document).ready(function() {
     });
 
     $(".nav-toggle").click(function() {
-        $("nav .overlay")[0].style.width = "100%";
+        $("nav .overlay")[0].style.height = "100%";
     });
 
     $(".nav-close").click(function() {
@@ -34,6 +34,6 @@ $(document).ready(function() {
     });
 
     function closeNavigationOverlay() {
-        $("nav .overlay")[0].style.width = "0";
+        $("nav .overlay")[0].style.height = "0";
     }
 });
