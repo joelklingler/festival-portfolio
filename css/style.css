@@ -186,10 +186,10 @@ section.landing-page .bg-container {
     height: 120%;
     width: 120%;
     overflow: hidden;
-    margin-left: -5%;
-    margin-right: -5%;
+    margin-left: -10%;
+    margin-right: -10%;
     margin-top: -5%;
-    margin-bottom: -5%;
+    margin-bottom: -10%;
     z-index: -1;
 }
 
@@ -198,15 +198,13 @@ section.landing-page .bg-media iframe {
     width: 120vw;
     height: 120vh;
     object-fit: cover;
-    /*-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);*/
-    transform: scale(1.0);
 }
 
 .gray-scale-filter {
+    -webkit-filter: grayscale();
+    -moz-filter: grayscale();
+    -o-filter: grayscale();
+    -ms-filter: grayscale();
     filter: grayscale();
 }
 
