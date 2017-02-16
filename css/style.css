@@ -193,7 +193,7 @@ section.landing-page .bg-container {
     z-index: -1;
 }
 
-section.landing-page .bg-media iframe {
+section.landing-page .bg-media img {
     display: block;
     width: 120vw;
     height: 120vh;
