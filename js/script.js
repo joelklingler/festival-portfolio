@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // Video
     toggleLogoAnimation();
-    video.pause();
+    video.muted = true;
 
     // Logo
     animatedLogo.on('click', function() {
@@ -21,13 +21,13 @@ $(document).ready(function() {
         if(barsAnimationStopped) {
             barsAnimationStopped = false;
             bars.css("-webkit-animation-play-state", "running");
-            // Play video:
-            video.play();
+            // Play unmuted video:
+            video.muted = false;
         } else {
             barsAnimationStopped = true;
             bars.css("-webkit-animation-play-state", "paused");
-            // Pause video:
-            video.pause();
+            // Mute video:
+            video.muted = true;
         }
     };
     function toggleVideoFilter() {
