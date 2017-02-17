@@ -33,11 +33,11 @@ $(document).ready(function() {
             // Mute video:
             video.muted = true;
         }
-    };
+    }
 
     function toggleVideoFilter() {
         $("section.landing-page .bg-media video").toggleClass("gray-scale-filter");
-    };
+    }
 
     // Landing-page background
     $(window).resize(function() {
