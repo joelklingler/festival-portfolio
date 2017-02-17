@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnPzYQfCOJscC0VH4uBTbEvpc8uhZdxq0"></script>
 </head>
 <body>
 <section class="landing-page" id="home">
@@ -135,12 +133,18 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="js/libraries/jquery.sticky.js"></script>
-<script src="js/libraries/jquery.parallax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnPzYQfCOJscC0VH4uBTbEvpc8uhZdxq0"></script>
+<script src="js/lib/jquery.sticky.js"></script>
+<script src="js/lib/jquery.parallax.min.js"></script>
+<script>
+    // Rename jquery.parallax.min.js parallax() for parallax.min.js parallax()
+    $.fn.parallaxEngine = $.fn.parallax;
+</script>
+<script src="js/lib/parallax.min.js"></script>
 
-<script src="js/map.js"></script>
-<script src="js/navigation.js"></script>
-<script src="js/script.js"></script>
+<script src="js/app/map.js"></script>
+<script src="js/app/navigation.js"></script>
+<script src="js/app/effects.js"></script>
 
 </body>
 </html>

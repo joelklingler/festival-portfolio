@@ -7,7 +7,7 @@ $(document).ready(function() {
     var bgVideo = $("section.landing-page .bg-media video");
 
     // Initialise
-    scene.parallax();
+    scene.parallaxEngine();
     centerBackgroundMedia();
     toggleLogoAnimation();
     animatedLogo.toggleClass("opacity-filter");
