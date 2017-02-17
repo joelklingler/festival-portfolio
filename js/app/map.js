@@ -81,7 +81,7 @@ function initMap() {
 
     for (i = 0; i < locations.length; i++) {
         marker = new google.maps.Marker({
-            icon: pinIcon,
+            icon: 'assets/icons/pin.png',
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map
         });
