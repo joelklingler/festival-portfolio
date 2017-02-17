@@ -3,14 +3,14 @@ $(document).ready(function() {
     var bars = $('.pseudo-bars .bar');
     var barsAnimationStopped = false;
     var scene = $("#scene");
-    var video = document.getElementById("bg-video"); 
+    var video = document.getElementById("bg-video");
+    var bgImg = $("section.landing-page .bg-media img");
 
     // Initialise
     scene.parallax();
-
-    // Video
+    centerBackgroundMedia();
     toggleLogoAnimation();
-    video.muted = true;
+    //video.muted = true;
 
     // Logo
     animatedLogo.on('click', function() {
@@ -22,15 +22,29 @@ $(document).ready(function() {
             barsAnimationStopped = false;
             bars.css("-webkit-animation-play-state", "running");
             // Play unmuted video:
-            video.muted = false;
+            //video.muted = false;
         } else {
             barsAnimationStopped = true;
             bars.css("-webkit-animation-play-state", "paused");
             // Mute video:
-            video.muted = true;
+            //video.muted = true;
         }
     };
+
     function toggleVideoFilter() {
         $("section.landing-page .bg-media video").toggleClass("gray-scale-filter", 3000);
     };
+
+    // Landing-page background
+    $(window).resize(function() {
+        centerBackgroundMedia();
+    });
+
+    function centerBackgroundMedia() {
+        bgImg.css({
+            position:'absolute',
+            left: ($(window).width() - bgImg.outerWidth())/2,
+            top: ($(window).height() - bgImg.outerHeight())/2
+        });
+    }
 });
