@@ -207,6 +207,10 @@ section.landing-page .bg-media video {
     filter: grayscale();
 }
 
+.opacity-filter {
+    opacity: 0.3;
+}
+
 section.landing-page .animated-logo {
     position: relative;
     margin: 0 auto;
