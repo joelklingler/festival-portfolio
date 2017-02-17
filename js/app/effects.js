@@ -2,6 +2,7 @@ $(document).ready(function() {
     var animatedLogo = $('.animated-logo');
     var bars = $('.pseudo-bars .bar');
     var barsAnimationStopped = false;
+    var paused = false;
     var scene = $("#scene");
     var video = document.getElementById("bg-video");
     var bgVideo = $("section.landing-page .bg-media video");
@@ -18,6 +19,7 @@ $(document).ready(function() {
     animatedLogo.on('click', function() {
         toggleLogoAnimation();
     });
+
     function toggleLogoAnimation() {
         animatedLogo.toggleClass("opacity-filter");
         animatedLogo.toggleClass("gray-scale-filter");
@@ -51,6 +53,20 @@ $(document).ready(function() {
             top: ($(window).height() - bgVideo.outerHeight())/2
         });
     }
+
+    // Video controls
+    $(".control").click(function() {
+        if(!paused) {
+            // pause
+            $(".control").children().addClass("fa-play").removeClass("fa-pause");
+            video.pause();
+            paused = true;
+        } else {
+            $(".control").children().addClass("fa-pause").removeClass("fa-play");
+            video.play();
+            paused = false;
+        }
+    });
 
     // Parallax scroll
     images = ["http://edmsauce.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/1366.jpg", "https://ultrajapan.com/wp-content/uploads/2015/11/japan-og-2.jpg"]

@@ -144,12 +144,16 @@ nav .overlay a.nav-close {
     font-size: 60px;
 }
 
-.scroll-info a.scroll {
+.scroll-info a.scroll, section.landing-page .video-controls ul li .control {
     text-decoration: none;
     color: white;
 }
 
 .scroll-info a.scroll:hover {
+    color: rgba(255, 255, 255, .55);
+}
+
+section.landing-page .video-controls ul li .control:hover {
     color: rgba(255, 255, 255, .55);
 }
 
@@ -174,6 +178,7 @@ nav .overlay a.nav-close {
 }
 
 .layer.scroll-layer {
+    width: 100%;
     top: 100% !important;
 }
 
@@ -345,6 +350,23 @@ section.landing-page .scroll-info {
     width: 100%;
     color: #fff;
     text-align: center;
+}
+
+section.landing-page .video-controls {
+    position: absolute;
+    bottom: 0;
+    width: 32px;
+    right: 0;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+section.landing-page .video-controls ul li {
+    padding-top: 10px;
+}
+
+section.landing-page .video-controls ul li .control {
+    /*color: #fff;*/
 }
 
 section.landing-page .scroll-info .arrow-down {
