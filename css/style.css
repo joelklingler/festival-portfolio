@@ -410,18 +410,6 @@ section.landing-page .scroll-info .arrow-down {
     }
 }
 
-section.images {
-    width: 100%;
-    background: transparent;
-}
-
-section.images .centered {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .parallax-image-container {
     position: relative;
     display: flex;
