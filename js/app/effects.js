@@ -51,4 +51,14 @@ $(document).ready(function() {
             top: ($(window).height() - bgVideo.outerHeight())/2
         });
     }
+
+    // Parallax scroll
+    images = ["http://edmsauce.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/1366.jpg", "https://i.ytimg.com/vi/vAuwk2hmp1A/maxresdefault.jpg", "https://ultrajapan.com/wp-content/uploads/2015/11/japan-og-2.jpg"]
+
+    var containers = $(".parallax-image-container");
+    containers.each(function(index) {
+        var container = $("#container-" + (index + 1));
+        console.log(container);
+        container.parallax({imageSrc: images[index]});
+    });
 });
