@@ -62,16 +62,26 @@ function initMap() {
         ['Electric Love @ Austria', 47.823452, 13.175016, 2],
         ['Openair @ St. Gallen', 47.424482, 9.376717, 3],
         ['Sonic @ Wolfwil', 47.269424, 7.823795],
-        ['Summerdays @ Arbon', 47.519659, 9.434226]
+        ['Summerdays @ Arbon', 47.519659, 9.434226],
+        ['Holi Gaudy @ Horgen', 47.260742, 8.596363]
     ];
 
     var infowindow = new google.maps.InfoWindow();
     var bounds = new google.maps.LatLngBounds();
 
+    var pinIcon = new google.maps.MarkerImage(
+        'assets/icons/pin.png',
+        null,
+        null,
+        null,
+        new google.maps.Size(40, 40)
+    );
+
     var marker, i;
 
     for (i = 0; i < locations.length; i++) {
         marker = new google.maps.Marker({
+            icon: pinIcon,
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map
         });
