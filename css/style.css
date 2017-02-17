@@ -193,9 +193,9 @@ section.landing-page .bg-container {
     z-index: -1;
 }
 
-section.landing-page .bg-media img {
-    width: 120vw;
-    height: 120vh;
+section.landing-page .bg-media video {
+    width: 140vw;
+    height: 140vh;
     object-fit: cover;
 }
 

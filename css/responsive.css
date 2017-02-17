@@ -37,6 +37,12 @@
     nav .centered ul li.active {
       border: none;
     }
+
+    section.landing-page .animated-logo {
+      width: 100px;
+      height: 100px;
+      margin-top: -50px;
+    }
 }
 
 @media screen and (max-width:1024px) {

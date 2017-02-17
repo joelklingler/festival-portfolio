@@ -4,7 +4,7 @@ $(document).ready(function() {
     var barsAnimationStopped = false;
     var scene = $("#scene");
     var video = document.getElementById("bg-video");
-    var bgImg = $("section.landing-page .bg-media img");
+    var bgImg = $("section.landing-page .bg-media video");
 
     // Initialise
     scene.parallax();
