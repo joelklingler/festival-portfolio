@@ -8,6 +8,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         scrollwheel: false,
         zoom: 6,
+        disableDefaultUI: true,
         gestureHandling: 'cooperative'
     });
 
