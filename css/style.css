@@ -415,10 +415,14 @@ section.landing-page .scroll-info .arrow-down {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 500px;
     box-sizing: border-box;
     overflow: hidden;
     background: transparent;
+}
+
+.parallax-image-container#container-1 {
+    height: 100vh;
 }
 
 section.places div#map {
