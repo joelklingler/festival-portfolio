@@ -447,6 +447,10 @@ section.landing-page .scroll-info .arrow-down {
     height: 100vh;
 }
 
+section.places {
+    border-bottom: 10px solid #fff;
+}
+
 section.places div#map {
     width: 100%;
     height: 700px;
