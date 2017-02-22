@@ -1,5 +1,6 @@
 # IDE Files
 .idea/
+*.log
 
 # Windows image file caches
 Thumbs.db
