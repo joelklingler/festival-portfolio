@@ -111,7 +111,7 @@ nav .overlay {
     top: 0;
     background-color:black;
     opacity: 0.9;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
 }
 
