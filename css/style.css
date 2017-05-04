@@ -205,11 +205,11 @@ section.landing-page .bg-media video {
 }
 
 .gray-scale-filter {
-    -webkit-filter: grayscale();
-    -moz-filter: grayscale();
-    -o-filter: grayscale();
-    -ms-filter: grayscale();
-    filter: grayscale();
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .opacity-filter {
