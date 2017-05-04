@@ -74,7 +74,6 @@ $(document).ready(function() {
     var containers = $(".parallax-image-container");
     containers.each(function(index) {
         var container = $("#container-" + (index + 1));
-        console.log(container);
         container.parallax({imageSrc: images[index]});
     });
 });
