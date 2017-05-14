@@ -68,20 +68,29 @@ $(document).ready(function() {
         }
     });
 
+    // Image overlays
     $(".block img").mouseover(function(e) {
+        switchToModifiedImage(e);
+    });
+
+    $(".block img").mouseleave(function(e) {
+        switchToOriginal(e);
+    });
+
+    function switchToModifiedImage(e) {
         var oldSrc = $(e.target).attr('src');;
         var pos = oldSrc.lastIndexOf('1');
         var newSrc = oldSrc.substring(0, pos) + '2' + oldSrc.substring(pos+1);
         $(e.target).attr('src', newSrc);
-    });
+    }
 
-    $(".block img").mouseleave(function(e) {
+    function switchToOriginal(e) {
         var oldSrc = $(e.target).attr('src');;
         var pos = oldSrc.lastIndexOf('2');
         var newSrc = oldSrc.substring(0, pos) + '1' + oldSrc.substring(pos+1);
         console.log(newSrc);
         $(e.target).attr('src', newSrc);
-    });
+    }
 
     // Parallax scroll
     images = ["https://ultrajapan.com/wp-content/uploads/2015/11/japan-og-2.jpg", "http://hardstylemag.com/wp-content/uploads/2015/07/Defqon.1-2015-Mainstage-HardstyleMag.jpg"]
