@@ -444,7 +444,7 @@ section.landing-page .scroll-info .arrow-down {
 }
 
 .parallax-image-container#container-1 {
-    height: 100vh;
+    height: 110vh;
 }
 
 section.places {
@@ -524,7 +524,7 @@ footer .centered .social span:hover {
 	margin: 10px;
 }
 
-.parallax-image-container .centered {
+.parallax-image-container .centered .images {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
