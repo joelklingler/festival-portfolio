@@ -478,10 +478,6 @@ section.landing-page .scroll-info .arrow-down {
     background: transparent;
 }
 
-.parallax-image-container#container-1 {
-    height: 110vh;
-}
-
 section.places {
     border-bottom: 10px solid #fff;
 }
@@ -553,13 +549,14 @@ footer .centered .social span:hover {
 }
 
 .block {
-	background-color: black;
-	width: 100px;
-	height: 100px;
 	margin: 10px;
 }
 
-.parallax-image-container .centered .images {
+.block img {
+    max-width: 1024px;
+}
+
+.centered .images {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
