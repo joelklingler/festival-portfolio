@@ -553,8 +553,8 @@ footer .centered .social span:hover {
 }
 
 .block img {
-    max-width: 1024px;
-    max-height: 768px;
+    max-width: 90vw;
+    max-height: 90vh;
 }
 
 .centered .images {
