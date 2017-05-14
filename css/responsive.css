@@ -52,4 +52,8 @@
     footer .centered {
       padding: 10px;
     }
+    .video iframe {
+      width: 90vw !important;
+      margin-left: 10px !important;
+    }
 }
