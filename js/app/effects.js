@@ -69,7 +69,7 @@ $(document).ready(function() {
     });
 
     // Parallax scroll
-    images = ["http://edmsauce.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/1366.jpg", "https://ultrajapan.com/wp-content/uploads/2015/11/japan-og-2.jpg"]
+    images = ["http://edmsauce.wpengine.netdna-cdn.com/wp-content/uploads/2014/11/1366.jpg", "https://ultrajapan.com/wp-content/uploads/2015/11/japan-og-2.jpg", "http://hardstylemag.com/wp-content/uploads/2015/07/Defqon.1-2015-Mainstage-HardstyleMag.jpg"]
 
     var containers = $(".parallax-image-container");
     containers.each(function(index) {

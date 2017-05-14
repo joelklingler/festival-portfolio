@@ -30,7 +30,42 @@ h1.title {
     font-size: 32px;
     color: #777;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
+}
+
+h2 {
+    font-weight: 250;
+    font-size: 28px;
+    color: #777;
+    text-align: center;
+    margin: 10px;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    padding: 15px 0;
+}
+
+p, li {
+    color: #777;
+    margin: 10px;
+    line-height: 20px;
+}
+
+.fa-external-link {
+    color: #FFE680;
+}
+
+p a {
+    color: #FFE680;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #777;
 }
 
 hr {
@@ -528,4 +563,19 @@ footer .centered .social span:hover {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+}
+
+#impressum {
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+
+.dev-images img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 10px;
+}
+
+.dev-images img:hover {
+    filter: sepia(60%);
 }
